@@ -1,0 +1,33 @@
+body {
+    background-color: rgba(212, 229, 255, 0.767);
+    color: rgb(0, 0, 0);
+    font-family: "montserrat", sans-serif;
+}
+
+.minhalogo {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.vitrine {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+.produto p:first-of-type {
+    font-weight: 500;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    margin-bottom: 5px;
+    color: #1a1a1a;
+}
+
+.produto p:last-of-type {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #333333;
+    margin-top: 0;
+}
