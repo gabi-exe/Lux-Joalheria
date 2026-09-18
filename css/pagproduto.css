@@ -11,8 +11,8 @@ body {
 }
 
 .vitrine {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
     gap: 25px;
     justify-content: center;
 }
@@ -31,6 +31,7 @@ body {
     color: #333333;
     margin-top: 0;
 }
+
 img {
     max-width: 100%;
     height: auto;
@@ -38,7 +39,6 @@ img {
 }
 
 .produto {
-    width: 160px;
     box-sizing: border-box;
 }
 
@@ -46,8 +46,9 @@ img {
     width: 100%;
     height: auto;
 }
+
 @media (max-width: 480px) {
-  .produto {
-    width: 45%;
-  }
+    .vitrine {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
