@@ -354,6 +354,7 @@ body{
 
         .Categorias{
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
             gap: 20px;
             font-size: 16px;
@@ -447,7 +448,49 @@ body{
         .favorito input:checked ~ .coracao {
         color: #d94f6b; 
         }
-        .coracao {
+                .coracao {
          font-size: 44px;
         }
-       
+
+        @media (max-width: 768px) {
+            .container {
+            flex-direction: column;
+            align-items: center;
+            gap: 24px;
+            width: 100%;
+        }
+
+        .fotodoanel img {
+            max-width: 90%;
+        }
+
+        .barra-lateral {
+            width: 90%;
+            text-align: center;
+        }
+        }
+       .vitrine {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+        justify-content: center;
+        align-items: flex-start;
+        }
+        
+        @media (max-width: 480px) {
+        .item-carrinho {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        }
+
+        .item-carrinho img {
+        width: 100%;
+        height: auto;
+        max-width: 160px;
+        }
+
+        .remover {
+        align-self: flex-start;
+        }
+        }

@@ -31,3 +31,23 @@ body {
     color: #333333;
     margin-top: 0;
 }
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.produto {
+    width: 160px;
+    box-sizing: border-box;
+}
+
+.produto img {
+    width: 100%;
+    height: auto;
+}
+@media (max-width: 480px) {
+  .produto {
+    width: 45%;
+  }
+}
